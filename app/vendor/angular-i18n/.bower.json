@@ -1,0 +1,20 @@
+{
+  "name": "angular-i18n",
+  "version": "1.5.0-build.4390+sha.ccd47ec",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "precommit.sh"
+  ],
+  "homepage": "https://github.com/angular/bower-angular-i18n",
+  "_release": "1.5.0-build.4390+sha.ccd47ec",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.5.0-build.4390+sha.ccd47ec",
+    "commit": "44c5818dd7f252f579796ae75e239982c2c991ba"
+  },
+  "_source": "git://github.com/angular/bower-angular-i18n.git",
+  "_target": "~1.5.0-beta.1",
+  "_originalSource": "angular-i18n"
+}
