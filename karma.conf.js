@@ -16,8 +16,9 @@ module.exports = function (config) {
       'app/vendor/angular-mocks/angular-mocks.js',
       'app/app.js',
       'app/components/**/*.html',
-      'app/services/*.js',
-      'app/filters/*.js'
+      'app/components/**/*.js',
+      'app/services/**/*.js',
+      'app/filters/**/*.js'
     ],
 
     // list of files to exclude
