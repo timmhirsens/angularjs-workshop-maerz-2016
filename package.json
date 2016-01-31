@@ -4,6 +4,7 @@
   "description": "A simple seed project for AngularJS.DE workshops.",
   "main": "app/index.html",
   "directories": {
+    "start": "http-server app/"
     "test": "test"
   },
   "scripts": {
