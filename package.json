@@ -4,7 +4,7 @@
   "description": "A simple seed project for AngularJS.DE workshops.",
   "main": "app/index.html",
   "directories": {
-    "start": "http-server app/",
+    "start": "live-server app/",
     "test": "test"
   },
   "scripts": {
@@ -31,6 +31,6 @@
     "karma-ng-html2js-preprocessor": "0.1.0",
     "karma-phantomjs-launcher": "0.2.0",
     "phantomjs": "^1.9.18",
-    "http-server": "0.8.5"
+    "live-server": "0.9.1"
   }
 }
