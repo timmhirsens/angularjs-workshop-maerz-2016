@@ -4,10 +4,10 @@
   "description": "A simple seed project for AngularJS.DE workshops.",
   "main": "app/index.html",
   "directories": {
-    "start": "live-server app/",
     "test": "test"
   },
   "scripts": {
+    "start": "live-server app/",
     "test": "karma start"
   },
   "repository": "",
