@@ -1,7 +1,9 @@
-<input type="range" ng-model="r" max="255"/>
-<input type="range" ng-model="g" max="255"/>
-<input type="range" ng-model="b" max="255"/>
+<input type="range" ng-model="$ctrl.r" max="255"/>
+<input type="range" ng-model="$ctrl.g" max="255"/>
+<input type="range" ng-model="$ctrl.b" max="255"/>
 
 <div style="height: 50px;
-            background: rgb({{r}},{{g}},{{b}});">
+            background: rgb({{$ctrl.r}},{{$ctrl.g}},{{$ctrl.b}});">
 </div>
+
+<pre>{{$ctrl | json}}</pre>
