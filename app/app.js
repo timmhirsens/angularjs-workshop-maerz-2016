@@ -5,7 +5,18 @@ angular.module('workshop', ['ngComponentRouter'])
   .component('app', {
     template: '<ng-outlet></ng-outlet>',
     $routeConfig: [
-      { path: '/', component: 'home' },
-      { path: '/colorpicker', component: 'colorpicker' }
+      // <a ng-link="['/BooksIndex']">Books</a>
+      { path: '/',
+        component: 'home',
+        name: 'Home'
+      },
+      { path: '/books',
+        component: 'booksIndex',
+        name: 'BooksIndex'
+      },
+      { path: '/colorpicker',
+        component: 'colorpicker',
+        name: 'Colorpicker'
+      }
     ]
   });
