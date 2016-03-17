@@ -14,9 +14,9 @@ angular.module('workshop', ['ngComponentRouter'])
         component: 'booksIndex',
         name: 'BooksIndex'
       },
-      { path: '/colorpicker',
-        component: 'colorpicker',
-        name: 'Colorpicker'
+      { path: '/books/:isbn/edit',
+        component: 'booksEdit',
+        name: 'BooksEdit'
       }
     ]
   });

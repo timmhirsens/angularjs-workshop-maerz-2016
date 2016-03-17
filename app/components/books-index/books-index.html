@@ -1,1 +1,12 @@
-Index
+<input type="text" class="form-control" ng-model="searchText">
+
+<table class="table">
+  <tr ng-repeat="book in $ctrl.books | filter:$ctrl.searchFn(searchText)">
+    <td><a ng-link="['/BooksEdit', { isbn: 1 }]">{{book.isbn}}</a></td>
+    <td>{{book.title}}</td>
+    <td>{{book.author}}</td>
+  </tr>
+</table>
+
+
+<pre>{{$ctrl.books | json}}</pre>
