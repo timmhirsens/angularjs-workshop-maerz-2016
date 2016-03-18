@@ -2,8 +2,8 @@
 
 <table class="table">
   <tr ng-repeat="book in $ctrl.books | filter:$ctrl.searchFn(searchText)">
-    <td><a ng-link="['/BooksEdit', { isbn: 1 }]">{{book.isbn}}</a></td>
-    <td>{{book.title}}</td>
+    <td><a ng-link="['/BooksEdit', { isbn: book.isbn }]">{{book.isbn}}</a></td>
+    <td ng-bind="book.title"></td>
     <td>{{book.author}}</td>
   </tr>
 </table>

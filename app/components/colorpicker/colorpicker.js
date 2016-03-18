@@ -7,6 +7,7 @@ angular.module('workshop')
     bindings: {
       r: '@',
       g: '@',
-      b: '='
+      b: '=',
+      callback: '&'
     }
   });

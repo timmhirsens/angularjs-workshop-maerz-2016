@@ -1,1 +1,18 @@
 <h1>Edit book</h1>
+
+<form name="form" novalidate ng-submit="$ctrl.save($ctrl.book)">
+  <label>Title</label>
+  <input type="text" name="title" ng-model="$ctrl.book.title" class="form-control" required blacklist="['Hirnbeiß', 'Windpisser']">
+
+  <div ng-if="form.title.$touched && form.title.$error.required" class="alert alert-danger">
+    Field is required!
+  </div>
+
+  <label>Author</label>
+  <input type="text" name="author" ng-model="$ctrl.book.author" class="form-control">
+
+  <button class="btn btn-primary">Save me!</button>
+</form>
+
+<br>
+<pre>{{$ctrl.book | json}}</pre>
