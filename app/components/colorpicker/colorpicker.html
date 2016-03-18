@@ -1,5 +1,6 @@
 <h1 ng-transclude></h1>
-<input type="range" ng-model="$ctrl.r" max="255" ng-change="$ctrl.callback()"/>
+<input type="range" ng-model="$ctrl.r" max="255"
+       ng-change="$ctrl.callback({red: $ctrl.r, green: 20, blue: 200})"/>
 <input type="range" ng-model="$ctrl.g" max="255"/>
 <input type="range" ng-model="$ctrl.b" max="255"/>
 

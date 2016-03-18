@@ -1,7 +1,11 @@
-<colorpicker r="10" g="100" b="$ctrl.b" callback="$ctrl.logColors(10, 20, 30)">
+<button hyper-click="$ctrl.logColors(10, 20, $event)"
+        class="btn btn-primary">Hyper Hyper</button>
+
+<colorpicker r="10" g="100" b="$ctrl.b" callback="$ctrl.logColors(red, green, blue)">
   Colorpicker 1
 </colorpicker>
 
 <colorpicker r="100" g="{{$ctrl.g}}" b="$ctrl.b">
   Colorpicker 2
 </colorpicker>
+
